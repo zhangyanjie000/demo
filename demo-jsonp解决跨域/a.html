@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jsonp解决跨域</title>
+    <script type="text/javascript">
+        //跨域访问失败的原因：协议不同（http/https）,端口号不同,主机名不同
+    function dosomething() {
+        //处理获得的JSON数据
+    }
+    </script>
+    <!--作为外部js文件引入，得到外部js文件-->
+    <script src="http://example.com/data.php?callback=dosomething"></script>
+</head>
+<body>
+        <!--利用ajax获取一个不同域上的json数据，假设这个json数据地址是http://example.com/data.php-->
+</body>
+</html>
