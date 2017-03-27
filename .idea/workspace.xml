@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1f9c2af-eebb-42e0-b883-5011d0589d4f" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo4-quickSort/quickSort.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_windows/abbreviations.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_windows/git.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_windows/keymap.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_windows/laf.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demo2-frame/iframe.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/filetypes.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/inspection/Default.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ui.lnf.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo-jsonp解决跨域/a.html" afterPath="$PROJECT_DIR$/demo3-jsonp解决跨域/a.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/demo-jsonp解决跨域/data.php" afterPath="$PROJECT_DIR$/demo3-jsonp解决跨域/data.php" />
     </list>
     <ignored path="demo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,11 +48,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="19">
               <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IE兼容" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/IE兼容/IE兼容">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117">
+              <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -86,6 +91,7 @@
         <option value="$PROJECT_DIR$/demo-jsonp解决跨域/a.html" />
         <option value="$PROJECT_DIR$/demo-jsonp解决跨域/data.php" />
         <option value="$PROJECT_DIR$/demo4-quickSort/quickSort.html" />
+        <option value="$PROJECT_DIR$/IE兼容/IE兼容" />
       </list>
     </option>
   </component>
@@ -147,20 +153,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo4-quickSort" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -251,7 +243,7 @@
       <workItem from="1490456429783" duration="990000" />
       <workItem from="1490517893994" duration="4247000" />
       <workItem from="1490531084996" duration="3954000" />
-      <workItem from="1490584041958" duration="45000" />
+      <workItem from="1490584041958" duration="5111000" />
     </task>
     <task id="LOCAL-00001" summary="delete">
       <created>1490409649668</created>
@@ -295,11 +287,25 @@
       <option name="project" value="LOCAL" />
       <updated>1490517950476</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="iframe">
+      <created>1490584110593</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1490584110593</updated>
+    </task>
+    <task id="LOCAL-00008" summary="iframe">
+      <created>1490587139881</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1490587139881</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13319000" />
+    <option name="totallyTimeSpent" value="18385000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -471,6 +477,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inspection/Default.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filetypes.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IE兼容/IE兼容">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
           <folding />
         </state>
       </provider>
