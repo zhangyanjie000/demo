@@ -1,0 +1,80 @@
+针对IE6/7/8 可以分为两种模式：怪异模式（Quirks mode）和标准模式（Standards mode）,在IE6以下版本下显示怪异模式，border和padding都包含在width中
+使用IE7编译：
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+也可以引进相应的js插件去解决html5和css3的问题，但是只能在小范围内或者单页中使用，代价是消耗性能
+
+        一、针对IE hack的技巧进行总结：
+有四种方法： 1、条件注释法 2、类内属性前缀法 3、选择器前缀法 4、IE选择器前缀法
+
+1、条件注释法
+<!-- [if !IE] -->除了IE都兼容<!-- [endif] -->
+<!-- [if IE] ->IE兼容 <!-- [endif] -->
+<!-- [if IE6] -->IE6兼容 <!-- [endif] -->
+<!-- [if lt IE6] -->IE6以下兼容 <!--[endif]-->
+<!--- [if gte IE6] --> IE6及IE6以上兼容 <!--[endif] -->
+
+lt:later than
+lte: later than and equal
+gt: greater than
+gte: greater than and equal
+
+2、类内属性前缀法
+div{
+-webkit-color:#ccc;/*Chrome and Safari*/
+-ms-color:#ccc;/* IE */
+-moz-color:#ccc;/* firefox*/
+-o-color:#ccc;/Opera/
+}
+3、选择器前缀法
+在上面介绍的两种方法基本上能解决80%的兼容性问题，一般不建议优先使用选择器前缀法，因为采用媒体查询的方法（需要CSS3支持）
+@media screen and(-webkit-min-device-pixel-ratio:0) {
+.class-name{
+    color:#ccc;/*Chrome and Safari*/
+}
+}
+4、IE选择器前缀法
+如果碰到IE8专属的hack使用上面的方法都没办法解决时，就可以使用这种方法了，前提是让IE6-IE8先支持媒体查询
+/*IE8*/
+@media \0screen{
+.class-name {
+    color:#ccc;
+}
+}
+
+IE6-IE11 全部兼容方法(从高版本写到低版本)
+div{
+    color:#ccc;
+    color:#ccc\9; /*IE8-IE10*/
+    color:#ccc\9\0;/*IE9-IE10*/
+    +color:#ccc;/*IE7*/
+    _color:#ccc;/*IE6*/
+}
+@media screen and(-ms-high-contrast:none){
+div{
+color:#ccc;/*IE10-IE11*/
+}
+}
+@media all and(-ms-hign-contrast:none) {
+    *::-ms backdrop,div{
+        color:#ccc;/*IE11*/
+    }
+}
+
+        二、IE调试技巧
+1、IE6-IE10大部分的div浮动问题都可以通过设置层的width、height和背景色（调试）解决
+2、容器内有浮动层元素的，在容器末尾添加清除浮动属性。
+3、使用IE-TEST和谷歌调试工具，IE8以下版本使用fire-bug的JS版本，IE8及以上的参考内置的调试工具（和实际效果显示不一样）
+4、兼容性版本的和实际效果是有差距的
+5、调试版本都从高到低版本进行调试，防止属性版本污染
+6、调试过程中，依次从外围向里删除无关的HTML结构和CSS/JS,直到出现问题的赌坊
+7、尽量少些hack，用其他方式可以避免则尽量避免
+
+
+        三、IE个版本的bug
+1、IE6 margin双倍边距
+在IE6中，浮动的div左右边上的margin会有双倍的值，解决方法：在这个div里添加display:inline;
+2、IE6 图片下会有空白缝隙
+解决方法：改变html的布局，设置img为display:block或者vertical-align:top|bottom|middle都可以解决
+3、IE6无法定义1px左右高度的容器
+主要是IE6下的默认行高造成的
+解决办法：overflow:hidden|zoom:0.08|line-height:1px
